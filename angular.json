@@ -30,9 +30,42 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/plugins/fontawesome-5.css",
+              "src/assets/css/plugins/swiper.css",
+              "src/assets/css/plugins/unicons.css",
+              "src/assets/css/plugins/metismenu.css",
+              "src/assets/css/plugins/magnific-popup.css",
+              "src/assets/css/plugins/timepickers.min.css",
+              "src/assets/css/plugins/aos.css",
+              "src/assets/css/plugins/hover-revel.css",
+              "src/assets/css/vendor/bootstrap.min.css",
+              "src/assets/css/style.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/plugins/jquery.min.js",
+              "src/assets/js/vendor/jqueryui.js",
+              "src/assets/js/plugins/counter-up.js",
+              "src/assets/js/plugins/swiper.js",
+              "src/assets/js/vendor/twinmax.js",
+              "src/assets/js/vendor/aos.js",
+              "src/assets/js/vendor/isotope.pkgd.min.js",
+              "src/assets/js/vendor/split-text.js",
+              "src/assets/js/plugins/text-plugins.js",
+              "src/assets/js/plugins/metismenu.js",
+              "src/assets/js/plugins/waypoint.js",
+              "src/assets/js/vendor/metisMenu.min.js",
+              "src/assets/js/vendor/wow.js",
+              "src/assets/js/plugins/jquery-ui.js",
+              "src/assets/js/plugins/jquery-timepicker.js",
+              "src/assets/js/plugins/magnific-popup.js",
+              "src/assets/js/vendor/sal.min.js",
+              "src/assets/js/plugins/bootstrap.min.js",
+              "src/assets/js/plugins/jquery-slideNav.js",
+              "src/assets/js/vendor/hover-revel.js",
+              "src/assets/js/plugins/swip-img.js",
+              "src/assets/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -92,10 +125,10 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+            "styles": [],
+            "scripts": [
+              "src/assets/js/main.js"
+            ]
           }
         }
       }
