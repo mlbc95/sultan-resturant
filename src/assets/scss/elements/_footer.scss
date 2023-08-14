@@ -271,7 +271,7 @@
             position: absolute;
             padding: 30px 40px 30px 60px;
             width: 100%;
-            background: url(../images/cta/cta-bg.webp);
+            background: url(../../../../src/assets/images/bg/coffee-banner.webp);
             background-color: #111111;
             top: -240px;
             left: 0;
@@ -827,7 +827,7 @@
     top: 0;
 }
 #anywhere-home {
-    cursor: url(../images/banner/shape/close.png), auto;
+    cursor: url(../../images/banner/shape/close.png), auto;
     background: #0e1013;
     position: fixed;
     width: 100%;

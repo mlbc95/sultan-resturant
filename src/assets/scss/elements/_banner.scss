@@ -231,7 +231,7 @@
         font-size: 14px;
         opacity: 1;
         text-transform: uppercase;
-        background: url(../images/bg/bg-image-2.webp);
+        background: url(../../images/bg/bg-image-2.webp);
         background-position: center;
         background-size: cover;
         letter-spacing: 0.05em;
@@ -251,12 +251,12 @@
             z-index: 1;
         }
         &:first-child{
-            background: url(../images/bg/bg-image-1.webp);
+            background: url(../../images/bg/bg-image-1.webp);
             background-position: center;
             background-size: cover;
         }
         &:last-child{
-            background: url(../images/bg/bg-image-3.webp);
+            background: url(../../images/bg/bg-image-3.webp);
             background-position: center;
             background-size: cover;
         }
@@ -361,11 +361,11 @@
                         }
                     }
                     &.bg_image--1{
-                        background: url(../images/bg/bg-image-7.jpg);
+                        background: url(../../images/bg/bg-image-1.webp);
                         background-size: cover;
                     }
                     &.bg_image--2{
-                        background: url(../images/bg/bg-image-8.jpg);
+                        background: url(../../images/bg/bg-image-1.webp);
                         background-size: cover;
                     }
                     
@@ -1011,7 +1011,7 @@
         }
     }
     &.banner-four{
-        background: url(../images/banner/bg-4.webp);
+        background: url(../../images/banner/bg-4.webp);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -1121,15 +1121,15 @@
                 .rts-banner-one{
                     padding: 165px 0 155px 0;
                     &.bg_image--1{
-                        background: url(../images/bg/bg-image-4.webp);
+                        background: url(../../images/bg/bg-image-4.webp);
                         background-size: cover;
                     }
                     &.bg_image--2{
-                        background: url(../images/bg/bg-image-5.webp);
+                        background: url(../../images/bg/bg-image-5.webp);
                         background-size: cover;
                     }
                     &.bg_image--3{
-                        background: url(../images/bg/bg-image-6.webp);
+                        background: url(../../images/bg/bg-image-6.webp);
                         background-size: cover;
                     }
                 }
@@ -1150,16 +1150,16 @@
             }
         }
         .swiper-pagination-bullet {
-            background: url(../images/bg/bg-image-5.webp);
+            background: url(../../images/bg/bg-image-5.webp);
             background-position: center;
             background-size: cover;
             &:first-child{
-                background: url(../images/bg/bg-image-4.webp);
+                background: url(../../images/bg/bg-image-4.webp);
                 background-position: center;
                 background-size: cover;
             }
             &:last-child{
-                background: url(../images/bg/bg-image-6.webp);
+                background: url(../../images/bg/bg-image-6.webp);
                 background-position: center;
                 background-size: cover;
             }
@@ -1169,7 +1169,7 @@
         }
     }
     &.banner-seven{
-        background: url(../images/bg/pizza-banner.webp);
+        background: url(../../images/bg/pizza-banner.webp);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -1285,7 +1285,7 @@
         }
     }
     &.banner-eight{
-        background: url(../images/bg/coffee-banner.webp);
+        background: url(../../images/bg/coffee-banner.webp);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -1450,7 +1450,7 @@
     }
 }
 .rts-breadcrumb-area{
-    background: url(../images/breadcrumbs/about.webp);
+    background: url(../../images/breadcrumbs/about.webp);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1537,7 +1537,7 @@
 }
 .home-one.our-chef{
     .rts-breadcrumb-area{
-        background: url(../images/breadcrumbs/chef.jpg);
+        background: url(../../images/breadcrumbs/chef.jpg);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1547,7 +1547,7 @@
 }
 .home-one.team-details{
     .rts-breadcrumb-area{
-        background: url(../images/breadcrumbs/meet-chef.webp);
+        background: url(../../images/breadcrumbs/meet-chef.webp);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1557,7 +1557,7 @@
 }
 .home-one.reservation{
     .rts-breadcrumb-area{
-        background: url(../images/breadcrumbs/reservation.webp);
+        background: url(../../images/breadcrumbs/reservation.webp);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1567,7 +1567,7 @@
 }
 .home-one.menu-tab{
     .rts-breadcrumb-area{
-        background: url(../images/breadcrumbs/menu-1.webp);
+        background: url(../../images/breadcrumbs/menu-1.webp);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1577,7 +1577,7 @@
 }
 .home-one.shop{
     .rts-breadcrumb-area{
-        background: url(../images/breadcrumbs/shop.webp);
+        background: url(../../images/breadcrumbs/shop.webp);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;

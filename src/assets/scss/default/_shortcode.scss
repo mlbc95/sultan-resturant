@@ -57,13 +57,13 @@ Background Image
 
 @for $i from 1 through 40 {
     .bg_image--#{$i} {
-        background-image: url(../images/bg/bg-image-#{$i}.webp);
+        background-image: url(../../images/bg/bg-image-1.webp);
     }
 }
 
 @for $i from 1 through 20 {
     .bg_tr-image--#{$i} {
-        background-image: url(../images/bg/bg-image-#{$i}.png) !important;
+        background-image: url(../../images/bg/bg-image-1.webp) !important;
         background-size: cover !important;
     }
 }
