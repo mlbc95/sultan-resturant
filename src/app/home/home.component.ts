@@ -5,9 +5,6 @@ declare const sal: () => any;
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+  standalone: true,
 })
-export class HomeComponent {
-  ngOnInit() {
-    sal()
-  }
-}
+export class HomeComponent {}
