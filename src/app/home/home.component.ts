@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
+declare const sal: () => any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

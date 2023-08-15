@@ -9,6 +9,93 @@
 // @import './assets/css/vendor/bootstrap.min.css';
 // @import './assets/css/style.css';
 
-p {
-  display: contents;
-}
+
+
+/*=======css indexing======
+
+1.Default css
+2.Typography
+3.Spacing
+4.Reset
+5.Forms
+6.Mixins
+7.Shortcods
+8.Common
+9.animation
+10. text-animation
+11. sal animation
+12. button style
+13. header
+14. nav style
+15. mobile-menu
+16. cart-side
+17. side-bar
+18. about style 
+19. banner style
+20. social share
+21. project style hear
+22. funfacts styles
+23. blog
+24. cta
+25. team
+26. service
+27. testimonials
+28. working-process
+29. faq
+30. goal-time
+31. timeline
+32. contact
+33. date-picker
+34. pagination
+35. story-company
+36. backto-top
+37. Experience area
+38. footer
+
+==========================*/
+
+
+
+/* Default  */
+
+@import './assets/scss/default/variables';
+@import'./assets/scss/default/typography';
+@import'./assets/scss/default/spacing';
+@import'./assets/scss/default/reset';
+@import'./assets/scss/default/forms';
+@import'./assets/scss/default/mixins';
+@import'./assets/scss/default/shortcode';
+@import'./assets/scss/default/common';
+@import'./assets/scss/default/animations';
+@import'./assets/scss/default/text-animation';
+@import'./assets/scss/default/sal';
+
+
+/*elements*/
+@import'./assets/scss/elements/button';
+@import'./assets/scss/elements/header';
+@import'./assets/scss/elements/nav';
+@import'./assets/scss/elements/mobile-menu';
+@import'./assets/scss/elements/cart-side';
+@import'./assets/scss/elements/side-bar';
+@import'./assets/scss/elements/about';
+@import'./assets/scss/elements/banner';
+@import'./assets/scss/elements/social';
+@import'./assets/scss/elements/menu';
+@import'./assets/scss/elements/funfacts';
+@import'./assets/scss/elements/blog';
+@import'./assets/scss/elements/cta';
+@import'./assets/scss/elements/team';
+@import'./assets/scss/elements/service';
+@import'./assets/scss/elements/testimonials';
+@import'./assets/scss/elements/working-process';
+@import'./assets/scss/elements/faq';
+@import'./assets/scss/elements/goal-time';
+@import'./assets/scss/elements/timeline';
+@import'./assets/scss/elements/contact';
+@import'./assets/scss/elements/date-picker';
+@import'./assets/scss/elements/pagination';
+@import'./assets/scss/elements/gallery';
+@import'./assets/scss/elements/backto-top';
+@import'./assets/scss/elements/experience';
+@import'./assets/scss/elements/footer';
