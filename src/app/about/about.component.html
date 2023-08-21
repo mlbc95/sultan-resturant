@@ -9,16 +9,14 @@
                                 <h2 class="heading-title"><img src="assets/images/about/time.png"
                                         alt="about-image">Opening Hours</h2>
                                 <ul class="bottom-content">
-                                    <li>Sun: 11:30AM - 8:00PM</li>
-                                    <li>Mon: Closed </li>
-                                    <li>Tue-Th: 11:30AM - 8:00PM</li>
-                                    <li>Fri-Sat: 11:30AM - 8:30PM</li>
+                                    <li *ngFor="let item of openingHours">{{item.abbr}} : {{item.hours}} </li>
+
                                 </ul>
                             </div>
-                            <div class="image"><img src="assets/images/about/about3.png" alt="about-image"></div>
+                            <div class="image"><img src="assets/images/shop/outside_1.jpeg" alt="about-image"></div>
                         </div>
                         <div class="right-side">
-                            <div class="image"><img src="assets/images/about/about4.webp" alt="about-image"></div>
+                            <div class="image"><img src="assets/images/shop/inside_2.jpeg" alt="about-image"></div>
                             <div class="content">
                                 <div class="content-icon">
                                     <img src="assets/images/about/knife.png" alt="about-image">

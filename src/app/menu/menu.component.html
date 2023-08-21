@@ -13,37 +13,38 @@
             </div>
             <div class="col-lg-6 text-center">
                 <div class="portfolio-menu mb-35" data-sal="slide-up" data-sal-delay="450" data-sal-duration="800">
-                    <button class="gf_btn active" data-filter="*">All</button>
-                    <button class="gf_btn" data-filter=".cat1">Beakfast</button>
-                    <button class="gf_btn" data-filter=".cat2">Dinner</button>
-                    <button class="gf_btn" data-filter=".cat3">Lunch</button>
+                    <button *ngFor="let item of menuFilter" class="gf_btn" [class.active]="item.isActive"
+                        data-filter="*" (click)="setActiveMenu(item)">{{item.type}}</button>
                 </div>
             </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="grid row align-items-center" data-sal="slide-up" data-sal-delay="270" data-sal-duration="800">
-            <div class="col-lg-2 col-md-4 col-sm-6 grid-item cat3">
-                <div class="portfolio-wrapper2 mb-30">
-                    <a href="shop-details.html" class="image">
-                        <img class="img-fluid" src="assets/images/project/01.jpg" alt="Portfolio Img">
+
+            <div *ngFor="let item of displayMenu" class="col-lg-2 col-md-4 col-sm-6 grid-item cat3">
+                <div class="portfolio-wrapper2 mb-30" (click)="setSelectedItem(item)">
+                    <a href="menu-details" class="image">
+                        <img class="img-fluid" [src]="item.img" style="height: 300px; width: 300px;"
+                            alt="Portfolio Img">
                     </a>
                     <div class="portfolio-content">
-                        <div class="star-rating">
+                        <!-- <div class="star-rating">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                        </div>
+                        </div> -->
                         <div class="content">
-                            <p class="title"><a href="shop-details.html">Chicha Morada</a></p>
-                            <span class="price">$33.00</span>
+                            <p class="title"><a href="menu-details">{{item.name}}</a></p>
+                            <span class="price">${{item.price}}</span>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-6 grid-item cat1">
+
+            <!-- <div class="col-lg-2 col-md-4 col-sm-6 grid-item cat1">
                 <div class="portfolio-wrapper2 mb-30">
                     <a href="shop-details.html" class="image">
                         <img class="img-fluid" src="assets/images/project/02.jpg" alt="Portfolio Img">
@@ -142,10 +143,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div class="button-area-banner" data-sal="slide-up" data-sal-delay="300" data-sal-duration="800">
+        <!-- <div class="button-area-banner" data-sal="slide-up" data-sal-delay="300" data-sal-duration="800">
             <a href="menu-list.html" class="rts-btn btn-secondary">Get Free Tour</a>
-        </div>
+        </div> -->
     </div>
 </div>
