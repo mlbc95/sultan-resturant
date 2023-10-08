@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ContentService } from '../services/content.service';
 import { CosmicService } from '../services/cosmic.service';
 
 @Component({
   selector: 'app-about',
   standalone: true,
   imports: [CommonModule],
-  providers: [CosmicService],
+  providers: [CosmicService, ContentService],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
@@ -14,7 +15,7 @@ export class AboutComponent {
 
   openingHours: any;
   formatedTime: any;
-  constructor(private cosmicService: CosmicService) {
+  constructor(private cosmicService: CosmicService, private _contentService: ContentService) {
   }
 
   ngOnInit() {
@@ -23,6 +24,10 @@ export class AboutComponent {
       console.log(this.openingHours)
       // this.formatTime()
 
+    })
+
+    this._contentService.getContent().subscribe((data: any) => {
+      console.log(data)
     })
   }
 

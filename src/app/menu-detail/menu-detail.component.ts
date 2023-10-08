@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class MenuDetailComponent {
 
-  selectedItem: ImenuItem = { type: "Appetizers", name: "", descrption: '', price: 0, img: '' };
+  selectedItem: ImenuItem = { type: "Appetizers", name: "", descrption: '', price: "0", img: '' };
   ngOnInit() {
     this.selectedItem = <ImenuItem>JSON.parse(localStorage.getItem('selectedItem') || " ")
   }
