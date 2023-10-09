@@ -6,7 +6,7 @@ interface ImenuBtnFilters {
 interface ImenuItem {
     name: string;
     img: string;
-    price?: number;
+    price?: string;
     descrption: string;
     type: "Appetizers" | "Main Entrees" | "Vegetarian Entrees" | "Drinks";
 }

@@ -2,18 +2,19 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-menu',
+  selector: 'app-menu-2',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  templateUrl: './menu-list-2.component.html',
+  styleUrls: ['./menu-list-2.component.scss']
 })
-export class MenuComponent {
+export class MenuListComponent {
   menuFilter: ImenuBtnFilters[] = [];
-  displayMenu: ImenuItem[] = [];
+  activeMenu: ImenuItem[] = [];
   menuItems: ImenuItem[] = [];
+  displayMenu: ImenuItem[] = []
   isActive: boolean = true;
-
+  showMore: boolean = true
   ngOnInit() {
     this.menuFilter = [{
       type: "All",
@@ -327,6 +328,7 @@ export class MenuComponent {
         price: "4.00"
       }
     ]
+    this.updateMenu()
   }
 
   setActiveMenu(item: ImenuBtnFilters) {
@@ -341,14 +343,27 @@ export class MenuComponent {
   updateMenu() {
     const activeMenuFilter = this.menuFilter.find((i) => i.isActive === true)
     if (activeMenuFilter?.type === "All") {
-      this.displayMenu = this.menuItems
+      this.activeMenu = this.menuItems
     } else {
-      this.displayMenu = this.menuItems.filter((i) => i.type === activeMenuFilter?.type)
+      this.activeMenu = this.menuItems.filter((i) => i.type === activeMenuFilter?.type)
+    }
+    this.displayMenu = this.activeMenu
+    this.showMore = (this.activeMenu.length > 6)
+
+    if (this.showMore) {
+      this.displayMenu = this.activeMenu.slice(0, 6)
     }
   }
 
   setSelectedItem(item: ImenuItem) {
     localStorage.setItem('selectedItem', JSON.stringify(item));
+  }
+
+  loadMore() {
+
+    this.activeMenu.slice(this.displayMenu.length, this.displayMenu.length + 6).map(item => this.displayMenu.push(item))
+    this.showMore = this.activeMenu.length !== this.displayMenu.length
+
   }
 
 }
